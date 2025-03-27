@@ -1,0 +1,78 @@
+.projetos {
+    padding: 100px 0px;
+    padding-left: 50px;
+  
+    .gradeProjetos {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 30px;
+  
+      .cardProjeto {
+        background-color: #161616;
+        border-radius: 10px;
+        padding: 20px;
+        transition: all 0.5s ease;
+  
+        &:hover {
+          box-shadow: 0 0 5px #9400d3, 0 0 25px #9400d3;
+          transform: translateY(-5px);
+        }
+  
+        .imgProjeto {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+          margin-bottom: 20px;
+          box-shadow: 0 0 1.5px #fff;
+        }
+  
+        .infoProjeto {
+          padding: 20px;
+  
+          h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #9400d3;
+          }
+  
+          p {
+            color: #bbb;
+            margin-bottom: 30px;
+            min-height: 100px;
+          }
+  
+          a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.5s ease;
+            padding: 10px 20px;
+            border: 2px solid #007bff;
+            border-radius: 5px;
+  
+            &:hover {
+              color: #000;
+              background-color: #007bff;
+              box-shadow: 0 0 5px #007bff, 0 0 25px #007bff;
+           }
+          }
+        }
+      }
+    }
+  }
+  
+  .title {
+    margin-bottom: 60px;
+    font-size: 42px;
+    position: relative;
+  }
+  
+  .title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    background-color: #9400d3;
+    width: 100px;
+    height: 2px;
+  }
