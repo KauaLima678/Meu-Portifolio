@@ -1,10 +1,11 @@
 import { useEffect } from 'react';
 import style from './style.module.css'
+import Logo from '../../Imgs/Lima Logo.png'
 
 export default function Home (){
 
     useEffect(() => {
-        const text = ["Desenvolvedor Front-End", "UX/UI", "React Js", "CSS3", "HTML5", "JavaScript", "MySQL", "Php"];
+        const text = ["Desenvolvedor Front-End", "UX/UI Designer", "React Js", "CSS3", "HTML5", "JavaScript", "MySQL", "Php"];
     
         let index = 0;
         let isDeleting = false;
@@ -44,10 +45,8 @@ export default function Home (){
       }, []);
 
     return(
-        <section className={style.Home}>
-          <div className={style.typeCont}>
-        <div className={style.typing} id="typingRight"><span></span></div>
-          </div>
+      <section className={style.Home}>
+          <div className={style.typing} id="typingRight"><span></span></div>
         <div className={style.info} id='home'>
             <h1>Olá! Me chamo <span>Kauã Lima</span></h1>
             <p> Sou um desenvolvedor Criativo e empenhado a construir interfaces web incríveis, apaixonado por
@@ -55,6 +54,7 @@ export default function Home (){
                 aprimorar minhas habilidades. </p>
             <a className={style.buttonProj} href="https://github.com/KauaLima678" target="_blank" rel="noopener noreferrer">Ver projetos</a>
         </div>
+        <img src={Logo} alt="" className={style.logo} />
     </section>
     );
 

@@ -22,8 +22,8 @@ header {
       .btn {
         background-color: transparent;
         position: relative;
-        padding: 8px 10px;
-        border: solid 1px #9400d3;
+        padding: 10px 15px;
+        background-color: #8A00FF;
         border-radius: 5px;
         font-size: 15px;
         text-decoration: none;
@@ -33,16 +33,16 @@ header {
         display: inline-block;
   
         &:hover {
-          box-shadow: 0 0 5px #007bff, 0 0 25px #007bff;
-          border: none;
-          background-color: #007bff;
-          color: #000000;
+          box-shadow: 0 0 5px #8A00FF, 0 0 25px #8A00FF;
+          color: #ffffff;
           transform: scale(1.05);
         }
       }
     }
   }
   
+
+
   header nav a {
     text-decoration: none;
     margin: 10px;
@@ -55,7 +55,7 @@ header {
   
   header nav a:hover {
     border: none;
-    background-color: #9400d385;
+    background-color: #540078b0;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
   }
@@ -65,7 +65,7 @@ header {
     position: absolute;
     width: 0;
     height: 1px;
-    background-color: #007bff;
+    background-color: #8A00FF;
     left: 0;
     bottom: 0;
     transition: all 0.5s;
