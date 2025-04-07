@@ -24,6 +24,7 @@
         padding: 20px;
         transition: all 0.5s ease;
         height: 450px;
+<<<<<<< HEAD
 
         @media (max-width: 400px) {
           padding: 10px;
@@ -31,6 +32,8 @@
           width: 250px;
           margin: auto;
         }
+=======
+>>>>>>> 5c924cf5f9a35fc0e1ed6075475de99ae424b363
   
         &:hover {
           transform: translateY(-5px);
@@ -43,6 +46,7 @@
           margin-bottom: 20px;
           border-top-left-radius: 10px;
           border-top-right-radius: 10px;
+<<<<<<< HEAD
 
           @media (max-width: 400px) {
              
@@ -60,6 +64,11 @@
             text-align: center;
           }
 
+=======
+        }
+  
+        .infoProjeto {
+>>>>>>> 5c924cf5f9a35fc0e1ed6075475de99ae424b363
           h3 {
             font-size: 24px;
             margin-bottom: 20px;

@@ -51,6 +51,7 @@
       transform: translateY(0);
     }
   }
+<<<<<<< HEAD
 
   @keyframes  buttonMobile{
     0%{
@@ -59,6 +60,8 @@
       opacity: 1;
     }
   }
+=======
+>>>>>>> 5c924cf5f9a35fc0e1ed6075475de99ae424b363
   
   .Home {
     padding: 0 30px;
@@ -69,6 +72,7 @@
     position: relative;
     justify-content: space-between;
 
+<<<<<<< HEAD
     @media (max-width: 1010px) {
       flex-direction: column;
       align-items: center;
@@ -85,6 +89,11 @@
       }
   
     }
+=======
+    /* .logo{
+      animation: movein 3s infinite ease alternate;
+    } */
+>>>>>>> 5c924cf5f9a35fc0e1ed6075475de99ae424b363
 
   
     .buttonProj {

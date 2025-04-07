@@ -16,6 +16,7 @@
       justify-content: space-between;
       align-items: center;
       width: 100%;
+<<<<<<< HEAD
 
       @media (max-width: 400px) {
         flex-direction: column;
@@ -23,6 +24,8 @@
         justify-content: center;
         gap: 70px;
       }
+=======
+>>>>>>> 5c924cf5f9a35fc0e1ed6075475de99ae424b363
   
       .contSobre{
 
@@ -30,11 +33,14 @@
           font-size: 25px;
           margin-bottom: 30px;
           text-transform: uppercase;
+<<<<<<< HEAD
 
           @media (max-width: 400px) {
            font-size: 22px;
            text-align: center;
           }
+=======
+>>>>>>> 5c924cf5f9a35fc0e1ed6075475de99ae424b363
         }
   
         p{
