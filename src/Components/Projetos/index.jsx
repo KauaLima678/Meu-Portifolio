@@ -1,42 +1,63 @@
-import style from './style.module.css';
-import Hamburgueria from '../../Imgs/Hamburgueria.png';
-import Jojo from '../../Imgs/Jojo.png';
-import Spotify from '../../Imgs/Spotify.png';
+import style from "./style.module.css";
+import Hamburgueria from "../../Imgs/Hamburgueria.png";
+import Jojo from "../../Imgs/Jojo.png";
+import Spotify from "../../Imgs/Spotify.png";
+import Nike from "../../Imgs/Nike.png";
 
 export default function Projetos() {
+  const projetos = [
+    {
+      id: 1,
+      nome: "Sr. Burguer",
+      descricao:
+        "Projeto de fim de ano feito em PHP com funcionalidades de login, cadastro, atualizar pedidos e muito mais.",
+      imagem: Hamburgueria,
+      link: "https://github.com/KauaLima678/Sr.-Burguer-Hamburgueria",
+    },
+    {
+      id: 2,
+      nome: "Jojo Page",
+      descricao:
+        "Minha primeira interface desenvolvida em React JS, colocando em prática meus conhecimentos adquiridos.",
+      imagem: Jojo,
+      link: "https://projeto-jojo-react-mgd3ds9az-kaua-limas-projects-bac59c0b.vercel.app/",
+    },
+    {
+      id: 3,
+      nome: "Interface Spotify",
+      descricao:
+        "Interface desenvolvida em React JS para pôr em prática meus conhecimentos sobre componentização. Esta não é uma página funcional.",
+      imagem: Spotify,
+      link: "https://projeto-react-spotify.vercel.app",
+    },
+    {
+      id: 4,
+      nome: "Page Nike",
+      descricao:
+        "Projeto desenvolvido em HTML, CSS e JS, colocando em prática meus conhecimentos sobre JavaScript e interfaces confortáveis.",
+      imagem: Nike,
+      link: "https://kaualima678.github.io/Nike/",
+    },
+  ];
 
-    return(
-        <section className={style.projetos} id='projetos'>
-        <h2 className={style.title}>Projetos</h2>
+  return (
+    <section className={style.projetos} id="projetos">
+      <h2 className={style.title}>Projetos</h2>
 
-        <div className={style.gradeProjetos}>
-            <div className={style.cardProjeto}>
-                <img src={Hamburgueria} alt="" className={style.imgProjeto}/>
-                <div className={style.infoProjeto}>
-                    <h3>Sr. Burguer</h3>
-                    <p>Projeto de fim de ano feito em php com funcionalidades de login, cadastro, atualizar pedidos e muito mais.</p>
-                    <a href="https://github.com/KauaLima678/Sr.-Burguer-Hamburgueria"  target="_blank" rel="noopener noreferrer">Ver projeto <span>→</span></a>
-                </div>
-            </div>
-            <div className={style.cardProjeto}>
-                <img src={Jojo} alt="" className={style.imgProjeto}/>
-                <div className={style.infoProjeto}>
-                    <h3>Jojo Page</h3>
-                    <p>Minha primeira interface Desenvolvida em React js, colocando em prática meus conhecimentos adquiridos.</p>
-                    <a href="https://projeto-jojo-react-mgd3ds9az-kaua-limas-projects-bac59c0b.vercel.app/"  target="_blank" rel="noopener noreferrer">Ver projeto →</a>
-                </div>
-            </div>
-            <div className={style.cardProjeto}>
-                <img src={Spotify} alt="" className={style.imgProjeto}/>
-                <div className={style.infoProjeto}>
-                    <h3>Interface Spotify</h3>
-                    <p>Interface Desenvolvida em React Js para por em prática meus conhecimentos sobre Componentização. Está não é uma página Funcional.
-                    </p>
-                    <a href="https://projeto-react-spotify.vercel.app"  target="_blank" rel="noopener noreferrer">Ver projeto →</a>
-                </div>
-            </div>
-        </div>
+      <div className={style.gradeProjetos}>
+      {projetos.map((projeto, id) => (
+    <div className={style.cardProjeto} key={id}>
+      <img src={projeto.imagem} alt={`Imagem do projeto ${projeto.nome}`} className={style.imgProjeto}/>
+      <div className={style.infoProjeto}>
+        <h3>{projeto.nome}</h3>
+        <p>{projeto.descricao}</p>
+        <a href={projeto.link} target="_blank" rel="noopener noreferrer">
+          Ver projeto <span>→</span>
+        </a>
+      </div>
+    </div>
+  ))}
+      </div>
     </section>
-    );
-
+  );
 }
