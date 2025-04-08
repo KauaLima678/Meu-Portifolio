@@ -21,7 +21,7 @@ footer {
   text-align: center;
   padding: 20px;
 
-  a{
+  a {
     text-decoration: none;
     color: #fff;
 
@@ -32,7 +32,7 @@ footer {
   }
 }
 
-.cursor{
+.cursor {
   pointer-events: none;
   position: fixed;
   width: 25px;
@@ -41,5 +41,8 @@ footer {
   background-color: #007bff8c;
   z-index: 99;
   transform: translate(-50%, -50%);
-}
 
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
